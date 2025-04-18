@@ -22,16 +22,35 @@
       text-shadow: 1px 1px 3px #00000070;
     }
 
+    /* Styling untuk foto */
+    .photo-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .photo-container img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-container img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Styling untuk tabel data diri */
     table {
       width: 100%;
       max-width: 850px;
       background-color: #2e2e3e;
       border: 2px solid #444;
       border-radius: 12px;
-      margin: 0 auto;
+      margin: 20px auto;
       border-collapse: collapse;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      overflow: hidden;
     }
 
     th, td {
@@ -52,28 +71,6 @@
       color: #333;
     }
 
-    .photo-cell {
-      background: linear-gradient(to bottom right, #3a3a55, #2c2c3d);
-      text-align: center;
-      padding: 20px;
-      width: 100%;
-    }
-
-    .photo-cell img {
-      display: block;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 350px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-      transition: transform 0.3s ease;
-    }
-
-    .photo-cell img:hover {
-      transform: scale(1.03);
-    }
-
     /* RESPONSIVE STYLES */
     @media (max-width: 768px) {
       table, tbody, tr, td, th {
@@ -83,10 +80,6 @@
 
       tr {
         margin-bottom: 20px;
-      }
-
-      .photo-cell img {
-        max-width: 80%;
       }
 
       th, td {
@@ -103,12 +96,14 @@
 </head>
 <body>
   <h1>BIODATA DIRI</h1>
+
+  <!-- Foto Diri -->
+  <div class="photo-container">
+    <img src="dencu.jpeg" alt="Foto Dennes Zaki Azizan">
+  </div>
+
+  <!-- Tabel Data Diri -->
   <table>
-    <tr>
-      <td class="photo-cell" colspan="3">
-        <img src="dencu.jpeg" alt="Foto Dennes Zaki Azizan">
-      </td>
-    </tr>
     <tr>
       <th>Data</th>
       <th>Keterangan</th>
