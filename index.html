@@ -54,12 +54,14 @@
 
     .photo-cell {
       background: linear-gradient(to bottom right, #3a3a55, #2c2c3d);
-      backdrop-filter: blur(4px);
       text-align: center;
       padding: 20px;
+      width: 100%;
     }
 
     .photo-cell img {
+      display: block;
+      margin: 0 auto;
       width: 100%;
       max-width: 350px;
       height: auto;
@@ -83,10 +85,6 @@
         margin-bottom: 20px;
       }
 
-      .photo-cell {
-        border-radius: 12px 12px 0 0;
-      }
-
       .photo-cell img {
         max-width: 80%;
       }
@@ -107,9 +105,11 @@
   <h1>BIODATA DIRI</h1>
   <table>
     <tr>
-      <td class="photo-cell" rowspan="6">
+      <td class="photo-cell" colspan="3">
         <img src="dencu.jpeg" alt="Foto Dennes Zaki Azizan">
       </td>
+    </tr>
+    <tr>
       <th>Data</th>
       <th>Keterangan</th>
     </tr>
