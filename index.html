@@ -71,20 +71,16 @@
       color: #333;
     }
 
+    /* Menambahkan scroll horizontal untuk tabel pada perangkat kecil */
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
     /* RESPONSIVE STYLES */
     @media (max-width: 768px) {
-      table, tbody, tr, td, th {
-        display: block;
-        width: 100%;
-      }
-
-      tr {
-        margin-bottom: 20px;
-      }
-
       th, td {
-        text-align: left;
-        padding: 10px;
         font-size: 16px;
       }
 
@@ -103,31 +99,33 @@
   </div>
 
   <!-- Tabel Data Diri -->
-  <table>
-    <tr>
-      <th>Data</th>
-      <th>Keterangan</th>
-    </tr>
-    <tr class="data-row">
-      <td>Nama</td>
-      <td>Dennes Zaki Azizan</td>
-    </tr>
-    <tr class="data-row">
-      <td>Alamat</td>
-      <td><a href="https://maps.app.goo.gl/73u7rz2BUXCTMvL27" target="_blank" style="color: #0066cc; text-decoration: none;">Desa Karang Anyar, kecamatan jati agung, Lampung Selatan</a></td>
-    </tr>    
-    <tr class="data-row">
-      <td>No HP</td>
-      <td><a href="https://wa.me/6281272438319" target="_blank" style="color: #0066cc; text-decoration: none;">081272438319</a></td>
-    </tr>    
-    <tr class="data-row">
-      <td>Kampus</td>
-      <td><a href="https://www.google.com/maps/place/Universitas+Mitra+Indonesia+Lampung" target="_blank" style="color: #0066cc; text-decoration: none;">Umitra</a></td>
-    </tr>    
-    <tr class="data-row">
-      <td>Prodi</td>
-      <td>Sistem Informasi</td>
-    </tr>
-  </table>
+  <div class="table-responsive">
+    <table>
+      <tr>
+        <th>Data</th>
+        <th>Keterangan</th>
+      </tr>
+      <tr class="data-row">
+        <td>Nama</td>
+        <td>Dennes Zaki Azizan</td>
+      </tr>
+      <tr class="data-row">
+        <td>Alamat</td>
+        <td><a href="https://maps.app.goo.gl/73u7rz2BUXCTMvL27" target="_blank" style="color: #0066cc; text-decoration: none;">Desa Karang Anyar, kecamatan jati agung, Lampung Selatan</a></td>
+      </tr>    
+      <tr class="data-row">
+        <td>No HP</td>
+        <td><a href="https://wa.me/6281272438319" target="_blank" style="color: #0066cc; text-decoration: none;">081272438319</a></td>
+      </tr>    
+      <tr class="data-row">
+        <td>Kampus</td>
+        <td><a href="https://www.google.com/maps/place/Universitas+Mitra+Indonesia+Lampung" target="_blank" style="color: #0066cc; text-decoration: none;">Umitra</a></td>
+      </tr>    
+      <tr class="data-row">
+        <td>Prodi</td>
+        <td>Sistem Informasi</td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
